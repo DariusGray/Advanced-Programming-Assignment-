@@ -1,0 +1,4 @@
+PatientID,TrialCode,DrugCode,Dosage_mg,StartDate,EndDate,Outcome,SideEffects,Analyst
+P001,T100,D200,50,2026-01-06,2026-01-13,Improved,None,AnalystA
+P002,T100,D200,25,2026-01-06,2026-01-13,No Change,Nausea,AnalystB
+P003,T101,D201,10,2026-01-06,2026-01-13,Worsened,Headache,AnalystC

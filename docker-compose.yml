@@ -1,0 +1,13 @@
+services:
+  clinical-validator:
+    image: clinical-validator
+    environment:
+      DISPLAY: host.docker.internal:0.0
+      FTP_HOST: host.docker.internal
+      FTP_USER: kaungnyi
+      FTP_PASSWORD: ""
+    volumes:
+      - ./Archive:/app/Archive
+      - ./Errors:/app/Errors
+      - ./temp:/app/temp
+      - ./processed_files.log:/app/processed_files.log
