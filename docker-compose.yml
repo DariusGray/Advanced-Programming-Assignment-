@@ -1,6 +1,6 @@
 services:
   clinical-validator:
-    image: clinical-validator
+    image: ghcr.io/dariusgray/clinical-validator:latest
     environment:
       DISPLAY: host.docker.internal:0.0
       FTP_HOST: host.docker.internal
