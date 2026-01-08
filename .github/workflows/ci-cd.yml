@@ -5,6 +5,10 @@ on:
     branches: ["main"]
   pull_request:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   test:
     name: CI - Unit Tests
@@ -33,10 +37,6 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      packages: write
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -52,10 +52,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          image: ghcr.io/dariusgray/clinical-validator:latest
+          images: ghcr.io/${{ github.repository_owner }}/clinical-validator
           tags: |
             type=raw,value=latest
-            type=sha
+            type=sha,format=short
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
@@ -64,4 +64,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
