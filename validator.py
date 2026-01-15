@@ -104,7 +104,6 @@ class _ParsedRow:
 
     @staticmethod
     def from_row(row: List[str], line_number: int) -> "_ParsedRow":
-        # Strip whitespace exactly like your original implementation
         stripped = [cell.strip() for cell in row]
         return _ParsedRow(
             row=stripped,
@@ -140,7 +139,7 @@ def validate_record(
 
     parsed = _ParsedRow.from_row(row, line_number)
 
-    # Mandatory fields (keep your exact messages)
+    # Mandatory fields 
     if _is_empty(parsed.patient_id):
         errors.append(f"Line {line_number}: PatientID is mandatory and cannot be empty")
     if _is_empty(parsed.trial_code):

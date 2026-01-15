@@ -15,10 +15,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the app code
 COPY . .
 
-# Create runtime dirs (also created by ensure_directories, but nice for Docker)
+# Create runtime dirs 
 RUN mkdir -p /app/Archive /app/Errors /app/temp
 
-# Default env (you can override via docker run / compose)
+# Default env 
 ENV DISPLAY=host.docker.internal:0.0
 
 CMD ["python", "main.py"]
