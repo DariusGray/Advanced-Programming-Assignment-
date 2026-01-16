@@ -20,5 +20,5 @@ RUN mkdir -p /app/Archive /app/Errors /app/temp
 
 # Default env 
 ENV DISPLAY=host.docker.internal:0.0
-
+# ci-cd pipeline
 CMD ["python", "main.py"]
