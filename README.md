@@ -58,5 +58,7 @@ Because this is a visual application, the Dockerized GUI renders securely onto y
    (Ensure you are running this in the directory containing the `docker-compose.yml` file).
 
 2. **Spin up the containerized system:**
-    `docker compose up`
+    ```
+   docker compose up
+    ```
     (Note: Ensure your local X Server is running and properly configured to accept connections from the Docker runtime before launching.)
