@@ -1,9 +1,9 @@
 # FTP-Based Clinical Data Management System 
 ### 🏥 Port Avalon General Hospital (PAGH) · Data Integrity & Archival Solution
 
-[cite_start]An enterprise-grade, Python-based application engineered to validate clinical data for Port Avalon General Hospital (PAGH)[cite: 486, 487]. [cite_start]The system connects seamlessly to an FTP server, downloads available CSV datasets, rigorously validates them against a predefined rule engine, and displays transparent results through a custom graphical user interface (GUI)[cite: 487]. 
+An enterprise-grade, Python-based application engineered to validate clinical data for Port Avalon General Hospital (PAGH). The system connects seamlessly to an FTP server, downloads available CSV datasets, rigorously validates them against a predefined rule engine, and displays transparent results through a custom graphical user interface (GUI). 
 
-[cite_start]The codebase was architected by combining imperative, object-oriented, and functional programming paradigms to solve complex real-world data workflows[cite: 488].
+The codebase was architected by combining imperative, object-oriented, and functional programming paradigms to solve complex real-world data workflows.
 
 ---
 
